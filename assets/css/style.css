@@ -1,11 +1,11 @@
 /* All Variables */
 
 :root {
-    --main:#1d3557;
+    --main:#457b9d;
     --second:#e63946;
     --second-fade:rgba(230, 57, 70, 0.9);
-    --dark:grey;
-    --medium:darkgrey;
+    --dark:#1d3557;
+    --medium:#A8DADC;
     --light:#f1faee;
 }
 /* Whole page reset and styling */
