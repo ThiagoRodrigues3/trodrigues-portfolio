@@ -1,0 +1,163 @@
+/* All Variables */
+
+:root {
+    --main:#1d3557;
+    --second:#e63946;
+    --second-fade:rgba(230, 57, 70, 0.9);
+    --dark:grey;
+    --medium:darkgrey;
+    --light:#f1faee;
+}
+/* Whole page reset and styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--main);
+    background-color: var(--light);
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header and Nav Stylings */
+
+header {
+    padding: 10px 5% 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    padding: 5px 1% 5px 1%;
+    margin: 0;
+    font-size: 3em;
+    line-height: 1;
+    background-color: var(--second-fade);
+}
+
+header h1:hover{
+    color: var(--medium);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 15%;
+    background-position: bottom;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--medium);
+    transition: all .1s ease-in;
+}
+
+.hero-img {
+background-color: var(--main);
+background-image: url(../images/mount.jpg), linear-gradient(90deg, var(--main) 0%, var(--second) 100%);
+background-position: center;
+background-blend-mode: hard-light ;
+min-height: 30vh;
+color: var(--medium);
+display: flex;
+text-align: right;
+align-items: flex-end;
+justify-content: space-between
+}
+
+.hero-img section {
+    flex: 0 0 90%;
+}
+
+.hero-img h2 {
+    background-color: var(--second-fade);
+    padding: 5px;
+    font-size: 2em;
+    display: inline;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    color: var(--main);
+}
+
+.hero-img h2:hover{
+    color: var(--medium);
+}
+
+.hero-img img {
+    width: 275px;
+    opacity: 85%;
+    margin-left: 50px;
+}
+
+.hero-img img:hover {
+    opacity: 100%;
+}
+
+.fit-within {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seperator {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.seperator h3 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 5px solid var(--main);
+    font-size: 1.8em;
+}
+
+.seperator div{
+    flex: 0 0 79%;
+}
+
+/* Portfolio section of the webpage */
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
