@@ -3,7 +3,7 @@
 :root {
     --main:#457b9d;
     --second:#e63946;
-    --second-fade:rgba(230, 57, 70, 0.9);
+    --second-fade:rgba(161, 56, 64, 0.85);
     --dark:#1d3557;
     --medium:#A8DADC;
     --light:#f1faee;
@@ -17,7 +17,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: var(--main);
+    color: var(--dark);
     background-color: var(--light);
     line-height: 1.5;
     font-family: 'Courier New', Courier, monospace;
@@ -71,6 +71,7 @@ nav a {
     font-weight: bold;
     padding-right: 2px;
     padding-left: 2px;
+    color: var(--dark);
 }
 
 nav a:hover {
@@ -79,46 +80,46 @@ nav a:hover {
     transition: all .1s ease-in;
 }
 
-.hero-img {
+.banner {
 background-color: var(--main);
 background-image: url(../images/mount.jpg), linear-gradient(90deg, var(--main) 0%, var(--second) 100%);
 background-position: center;
 background-blend-mode: hard-light ;
 min-height: 30vh;
-color: var(--medium);
 display: flex;
 text-align: right;
 align-items: flex-end;
 justify-content: space-between
 }
 
-.hero-img section {
+.banner section {
     flex: 0 0 90%;
 }
 
-.hero-img h2 {
+.banner h2 {
     background-color: var(--second-fade);
     padding: 5px;
     font-size: 2em;
     display: inline;
     margin-right: 50px;
     margin-bottom: 25px;
-    color: var(--main);
 }
 
-.hero-img h2:hover{
+.banner h2:hover{
     color: var(--medium);
 }
 
-.hero-img img {
+.banner img {
     width: 275px;
     opacity: 85%;
     margin-left: 50px;
 }
 
-.hero-img img:hover {
+.banner img:hover {
     opacity: 100%;
 }
+
+/* Main Body Attributes  */
 
 .fit-within {
     max-width: 85%;
