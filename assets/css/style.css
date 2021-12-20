@@ -124,7 +124,9 @@ nav a:hover {
 .banner img {
   width: 275px;
   opacity: 90%;
-  margin-left: 50px;
+  margin-left: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .banner img:hover {
@@ -160,6 +162,46 @@ nav a:hover {
   flex: 0 0 79%;
 }
 
+#content {
+    justify-content: left;
+}
+
+
+
+
+
+
+
+
+.separator address {
+    justify-content: normal;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.separator address a {
+    text-decoration: none;
+    color: var(--dark) ;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-image: linear-gradient(
+    270deg,
+    var(--dark) 0%,
+    var(--dark) 100%
+  );
+  background-size: 100% 15%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.separator address a:hover {
+    background-size: 100% 100%;
+    color: var(--medium);
+    transition: all 0.1s ease-in;
+}
 /* Portfolio section of the webpage */
 
 footer {
