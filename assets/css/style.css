@@ -81,12 +81,12 @@ nav a {
   padding-right: 2px;
   padding-left: 2px;
   color: var(--dark);
+  transition: all 0.2s ease-in;
 }
 
 nav a:hover {
   background-size: 100% 100%;
   color: var(--medium);
-  transition: all 0.1s ease-in;
 }
 
 .banner {
@@ -162,46 +162,113 @@ nav a:hover {
   flex: 0 0 79%;
 }
 
-#content {
-    justify-content: left;
+.grid {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(150px, 1fr);
 }
 
+.grid-box {
+    border: 5px solid var(--second);
+    grid-column: span 4;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    padding: 0 0 10px 5px;
+    background-color: var(--main);
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    background-position: center;
+    font-size: 1em;
+    min-height: 150px;
+    border-radius: 25px;
+    transition: transform 0.2s, background-color .2s;
+}
 
+.grid-box:first-child {
+    grid-column: span 8;
+    grid-row: span 3;
+}
+.grid-box:last-child {
+    grid-column: span 8;
+}
+.grid-box:hover {
+    background-color: #1d355775;
+    transform: scale(1.02);
+    z-index: 2;
+}
 
+.grid-box div {
+    background-color: var(--second);
+}
 
+.grid-box h4 {
+    font-size: 1.5em;
+    color: var(--dark);
+}
+.grid-box span{
+    color: var(--dark);
+}
 
+.horiseon-box {
+    background-image: url(../images/horiseon.png);
+}
 
+.rps-box {
+    background-image: url(../images/galaxy-place-holder.jpg);
+}
 
+.odin-box {
+    background-image: url(../images/odin.png);
+}
+
+.ucf-box {
+    background-image: url(../images/UCF.jpg);
+}
+
+.css-box {
+    background-image: url(../images/con-place-holder.jpg);
+}
+
+.pp-box {
+    background-image: url(../images/tri-place\ holder.jpg);
+}
+
+/*  Contact Me Cards */
+
+#contact {
+  justify-content: left;
+}
 
 .separator address {
-    justify-content: normal;
-    font-size: 1.5em;
-    font-weight: bold;
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
+  justify-content: normal;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .separator address a {
-    text-decoration: none;
-    color: var(--dark) ;
-    padding-left: 2px;
-    padding-right: 2px;
-    background-image: linear-gradient(
-    270deg,
-    var(--dark) 0%,
-    var(--dark) 100%
-  );
+  text-decoration: none;
+  color: var(--dark);
+  padding-left: 2px;
+  padding-right: 2px;
+  background-image: linear-gradient(270deg, var(--dark) 0%, var(--dark) 100%);
   background-size: 100% 15%;
   background-position: bottom;
   background-repeat: no-repeat;
+  transition: all 0.2s ease-in;
 }
 
 .separator address a:hover {
-    background-size: 100% 100%;
-    color: var(--medium);
-    transition: all 0.1s ease-in;
+  background-size: 100% 100%;
+  color: var(--medium);
 }
+
 /* Portfolio section of the webpage */
 
 footer {
