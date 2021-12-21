@@ -163,78 +163,78 @@ nav a:hover {
 }
 
 .grid {
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(150px, 1fr);
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(150px, 1fr);
 }
 
 .grid-box {
-    border: 5px solid var(--second);
-    grid-column: span 4;
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-    padding: 0 0 10px 5px;
-    background-color: var(--main);
-    background-blend-mode: soft-light;
-    background-size: 150%;
-    background-position: center;
-    font-size: 1em;
-    min-height: 150px;
-    border-radius: 25px;
-    transition: transform 0.2s, background-color .2s;
+  border: 5px solid var(--second);
+  grid-column: span 4;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  padding: 0 0 10px 5px;
+  background-color: var(--main);
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  background-position: center;
+  font-size: 1em;
+  min-height: 150px;
+  border-radius: 25px;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .grid-box:first-child {
-    grid-column: span 8;
-    grid-row: span 3;
+  grid-column: span 8;
+  grid-row: span 3;
 }
 .grid-box:last-child {
-    grid-column: span 8;
+  grid-column: span 8;
 }
 .grid-box:hover {
-    background-color: #1d355775;
-    transform: scale(1.02);
-    z-index: 2;
+  background-color: #1d355775;
+  transform: scale(1.02);
+  z-index: 2;
 }
 
 .grid-box div {
-    background-color: var(--second);
+  background-color: var(--second);
 }
 
 .grid-box h4 {
-    font-size: 1.5em;
-    color: var(--dark);
+  font-size: 1.5em;
+  color: var(--dark);
 }
-.grid-box span{
-    color: var(--dark);
+.grid-box span {
+  color: var(--dark);
 }
 
 .horiseon-box {
-    background-image: url(../images/horiseon.png);
+  background-image: url(../images/horiseon.png);
 }
 
 .rps-box {
-    background-image: url(../images/galaxy-place-holder.jpg);
+  background-image: url(../images/galaxy-place-holder.jpg);
 }
 
 .odin-box {
-    background-image: url(../images/odin.png);
+  background-image: url(../images/odin.png);
 }
 
 .ucf-box {
-    background-image: url(../images/UCF.jpg);
+  background-image: url(../images/UCF.jpg);
 }
 
 .css-box {
-    background-image: url(../images/con-place-holder.jpg);
+  background-image: url(../images/con-place-holder.jpg);
 }
 
 .pp-box {
-    background-image: url(../images/tri-place\ holder.jpg);
+  background-image: url(../images/tri-place\ holder.jpg);
 }
 
 /*  Contact Me Cards */
@@ -281,59 +281,59 @@ footer {
 /* Max Width 980px*/
 
 @media screen and (max-width: 980px) {
-    header {
-        padding: 0 0 10px 0;
-        justify-content: center;
-        text-align: center;
-    }
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
 
-    header h1 {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-        font-size: 10vw;
-    }
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
 
-    header nav {
-        justify-content: center;
-    }
+  header nav {
+    justify-content: center;
+  }
 
-    .separator > h2,
-    .separator > div {
-        flex: 0 0 100%;
-    }
+  .separator > h2,
+  .separator > div {
+    flex: 0 0 100%;
+  }
 
-    .separator > h2 {
-        border-right: none;
-        border-bottom: 4px solid var(--main);
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        text-align: left;
-        font-size: 7vw;
-    }
+  .separator > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--main);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
 
-    .banner {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-    }
+  .banner {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+  }
 }
 
 /* Max Width 768px*/
 @media screen and (max-width: 768px) {
-    .grid-box,
-    .grid-box:first-child {
-        grid-column: 1 / -1;
-    }
+  .grid-box,
+  .grid-box:first-child {
+    grid-column: 1 / -1;
+  }
 
-    .grid {
-        grid-auto-rows: minmax(200px, 1fr);
-    }
+  .grid {
+    grid-auto-rows: minmax(200px, 1fr);
+  }
 
-    .contact address {
-        flex-direction: column;
-        align-items: center;
-    }
+  .contact address {
+    flex-direction: column;
+    align-items: center;
+  }
 }
