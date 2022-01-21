@@ -213,30 +213,30 @@ nav a:hover {
   color: var(--dark);
 }
 
+
+.fourstor-box {
+  background-image: url(../images/fourstor.PNG);
+}
+
+.weatherdashboard-box {
+  background-image: url(../images/weather-dashboard.PNG);
+}
+
+.passwordgen-box {
+  background-image: url(../images/code-quiz.PNG);
+}
+
+.planner-box {
+  background-image: url(../images/Planner.PNG);
+}
+
+.codequiz-box {
+  background-image: url(../images/Demo\ QWuiz.PNG);
+}
+
 .horiseon-box {
   background-image: url(../images/horiseon.png);
 }
-
-.rps-box {
-  background-image: url(../images/galaxy-place-holder.jpg);
-}
-
-.odin-box {
-  background-image: url(../images/odin.png);
-}
-
-.ucf-box {
-  background-image: url(../images/UCF.jpg);
-}
-
-.css-box {
-  background-image: url(../images/con-place-holder.jpg);
-}
-
-.pp-box {
-  background-image: url(../images/tri-place\ holder.jpg);
-}
-
 /*  Contact Me Cards */
 
 #contact {
